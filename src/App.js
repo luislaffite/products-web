@@ -16,7 +16,7 @@ function App() {
 <div className="login-wrapper" id="login-content">
     <div className="login-content">
         <a href="#" className="close">x</a>
-        <h3>Login</h3>
+        <h3>Login - nanana</h3>
         <form method="post" action="#">
         	<div className="row">
         		 <label for="username">
