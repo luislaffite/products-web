@@ -1,6 +1,7 @@
 import React from "react";
 import logo from '../logo.svg';
 import '../styles/App.css';
+import Pelicula from "./Pelicula";
 
 const HomeComponent = () => {
   return (
@@ -233,39 +234,27 @@ const HomeComponent = () => {
 					<a href="movielist.html" className="list"><i className="ion-ios-list-outline active"></i></a>
 					<a  href="moviegrid.html" className="grid"><i className="ion-grid"></i></a>
 				</div>
-				<div className="movie-item-style-2">
-					<img src="images/uploads/mv1.jpg" alt="" />
-					<div className="mv-item-infor">
-						<h6><a href="moviesingle.html">oblivion <span>(2012)</span></a></h6>
-						<p className="rate"><i className="ion-android-star"></i><span>8.1</span> /10</p>
-						<p className="describe">Earth's mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity...</p>
-						<p className="run-time"> Run Time: 2h21’    .     <span>MMPA: PG-13 </span>    .     <span>Release: 1 May 2015</span></p>
-						<p>Director: <a href="#">Joss Whedon</a></p>
-						<p>Stars: <a href="#">Robert Downey Jr.,</a> <a href="#">Chris Evans,</a> <a href="#">  Chris Hemsworth</a></p>
-					</div>
-				</div>
-				<div className="movie-item-style-2">
-					<img src="images/uploads/mv2.jpg" alt="" />
-					<div className="mv-item-infor">
-						<h6><a href="moviesingle.html">into the wild <span>(2014)</span></a></h6>
-						<p className="rate"><i className="ion-android-star"></i><span>7.8</span> /10</p>
-						<p className="describe">As Steve Rogers struggles to embrace his role in the modern world, he teams up with a fellow Avenger and S.H.I.E.L.D agent, Black Widow, to battle a new threat...</p>
-						<p className="run-time"> Run Time: 2h21’    .     <span>MMPA: PG-13 </span>    .     <span>Release: 1 May 2015</span></p>
-						<p>Director: <a href="#">Anthony Russo,</a><a href="#">Joe Russo</a></p>
-						<p>Stars: <a href="#">Chris Evans,</a> <a href="#">Samuel L. Jackson,</a> <a href="#">  Scarlett Johansson</a></p>
-					</div>
-				</div>
-				<div className="movie-item-style-2">
-					<img src="images/uploads/mv3.jpg" alt="" />
-					<div className="mv-item-infor">
-						<h6><a href="moviesingle.html">blade runner  <span>(2015)</span></a></h6>
-						<p className="rate"><i className="ion-android-star"></i><span>7.3</span> /10</p>
-						<p className="describe">Armed with a super-suit with the astonishing ability to shrink in scale but increase in strength, cat burglar Scott Lang must embrace his inner hero and help...</p>
-						<p className="run-time"> Run Time: 2h21’    .     <span>MMPA: PG-13 </span>    .     <span>Release: 1 May 2015</span></p>
-						<p>Director: <a href="#">Peyton Reed</a></p>
-						<p>Stars: <a href="#">Paul Rudd,</a> <a href="#"> Michael Douglas</a></p>
-					</div>
-				</div>
+
+                <Pelicula titulo="oblivion (2012)" calificacion = "8.1"
+				director = "Joss Whedon" actores = "Robert Downey Jr.,Chris Evans, Chris Hemsworth"fecha = "Release: 1 May 2015"
+				imagen = "images/uploads/mv1.jpg">
+					Earth's mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity...
+				</Pelicula>
+				
+
+				<Pelicula titulo="into the wild (2014)" calificacion = "7.8"
+				director = "Anthony Russo" actores = "Chris Evans, Samuel L. Jackson, Scarlett Johansson"fecha = "Release: 1 May 2015"
+				imagen = "images/uploads/mv2.jpg">
+					As Steve Rogers struggles to embrace his role in the modern world, he teams up with a fellow Avenger and S.H.I.E.L.D agent, Black Widow, to battle a new threat...
+				</Pelicula>
+
+				<Pelicula titulo="lade runner  (2015)" calificacion = "7.3"
+				director = "Peyton Reed" actores = "Paul Rudd, Michael Douglas"fecha = "Release: 1 May 2015"
+				imagen = "images/uploads/mv3.jpg">
+					As Steve Rogers struggles to embrace his role in the modern world, he teams up with a fellow Avenger and S.H.I.E.L.D agent, Black Widow, to battle a new threat...
+				</Pelicula>
+				
+			
 				<div className="movie-item-style-2">
 					<img src="images/uploads/mv4.jpg" alt="" />
 					<div className="mv-item-infor">
