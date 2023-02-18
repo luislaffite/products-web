@@ -1,9 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from '../logo.svg';
+import '../styles/App.css';
 
-function App() {
+const HomeComponent = () => {
   return (
     <div>
+       
     
 <div id="preloader">
     <img className="logo" src="images/logo1.png" alt="" width="119" height="58" />
@@ -203,7 +205,7 @@ function App() {
 		<div className="row">
 			<div className="col-md-12">
 				<div className="hero-ct">
-					<h1> movie listing - list</h1>
+					<h1> cambiar peliculas por productos - list</h1>
 					<ul className="breadcumb">
 						<li className="active"><a href="#">Home</a></li>
 						<li> <span className="ion-ios-arrow-right"></span> movie listing</li>
@@ -440,8 +442,8 @@ function App() {
 		</div>
 	</div>
 </footer>
-   </div>
+    </div>
   );
-}
+};
 
-export default App;
+export default HomeComponent;
