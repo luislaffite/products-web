@@ -11,7 +11,7 @@ const ListadoComponent = () => {
 
 	const [paginaActual, setPaginaActual] = useState(1);
 	const [peliculas, setPeliculas] = useState([]);
-	const TOTAL_POR_PAGINA = 3;
+	const TOTAL_POR_PAGINA = 4;
 
 	useEffect(() => {
 		buscarPeliculas();

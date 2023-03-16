@@ -2,9 +2,9 @@ import React from "react";
 import logo from "../logo.svg";
 import "../styles/App.css";
 
-export default function Wrapper(props) {
-  return (
-    <div>
+const InicioComponent = (props) => {
+    return (
+<div>
       <div id="preloader">
         <img
           className="logo"
@@ -294,14 +294,14 @@ export default function Wrapper(props) {
           <div className="row">
             <div className="col-md-12">
               <div className="hero-ct">
-                <h1> cambiar peliculas por productos - list</h1>
+                <h1> inicio </h1>
                 <ul className="breadcumb">
                   <li className="active">
                     <a href="#">Inicio</a>
                   </li>
                   <li>
                     {" "}
-                    <span className="ion-ios-arrow-right"></span> Listado
+                    
                   </li>
                 </ul>
               </div>
@@ -312,32 +312,19 @@ export default function Wrapper(props) {
       <div className="page-single movie_list">
         <div className="container">
           <div className="row ipad-width2">
-            <div className="col-md-8 col-sm-12 col-xs-12">
+            <div className="col-md-9 col-sm-12 col-xs-12">
               <div className="topbar-filter">
-                <p>
-                  Encontrado <span>458 articulos</span> en total
-                </p>
-                <label>Ordenar por:</label>
-                <select>
-                  <option value="popularity">Popularidad ascendente</option>
-                  <option value="popularity">Popularidad descendente</option>
-                  <option value="rating">Rating Descending</option>
-                  <option value="rating">Rating Ascending</option>
-                  <option value="date">Release date Descending</option>
-                  <option value="date">Release date Ascending</option>
-                </select>
-                <a href="movielist.html" className="list">
-                  <i className="ion-ios-list-outline active"></i>
-                </a>
-                <a href="moviegrid.html" className="grid">
-                  <i className="ion-grid"></i>
-                </a>
+
+                <h3>
+                  Ofertas y <span>articulos</span> ultimas unidades
+                </h3>
+              
               </div>
-
-              {props.children}
-
+            
             </div>
-            <div className="col-md-4 col-sm-12 col-xs-12">
+
+
+            <div className="col-md-3 col-sm-12 col-xs-12">
               <div className="sidebar">
                 <div className="searh-form">
                   <h4 className="sb-title">Search for movie</h4>
@@ -539,5 +526,7 @@ export default function Wrapper(props) {
         </div>
       </footer>
     </div>
-  );
-}
+    );
+};
+
+export default InicioComponent;
